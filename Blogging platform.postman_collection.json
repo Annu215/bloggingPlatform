@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "982157e2-d645-4ed7-b7b7-e9d67d330775",
+		"name": "Blogging platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13438864"
+	},
+	"item": [
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title\",\r\n    \"category\": \"category\",\r\n    \"description\": {\r\n        \"short\": \"short\",\r\n        \"long\": \"long\"\r\n    },\r\n    \"monetized\":{\r\n        \"ok\":false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Fitness Pal\",\r\n    \"category\": \"Health/Fitness\",\r\n    \"description\": {\r\n        \"short\": \"Founded in 2005 by Albert Lee and Mike Lee, MyFitnessPal is a fitness app and blog that publishes about all things fitness, health & wellness.\",\r\n        \"long\": \"From diet and nutrition to fitness regimens to motivation, the blog is a valuable resource for those looking to live life to the fullest.\r\n\r\nThe success of the app (80 million users around the world, at the time) caught the attention of sports apparel maker Under Armor who eventually purchased it for a whopping $475 million.\r\n\r\nContent for fitness junkies. Unlike Nerd Fitness, MyFitnessPal is a blog that caters to serious fitness junkies. And the articles don’t disappoint.\r\nA healthy mix of content. Another contributor to the success of the MyFitnessPal blog is the holistic approach they take to fitness. This is evidenced by the different categories on the blog like food and recipes, inspiration, and other fitness-related categories.\r\nFeel like this is the kind of blog you want to build? Then go ahead and study this blog example and mirror what’s working.\"\r\n    },\r\n    \"monetized\":{\r\n        \"ok\":false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/api/blog/create",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"blog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"blog_id\":\"651401da743f6a8b057b3cc5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/api/blog/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"blog",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find One",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title\",\r\n    \"category\": \"category\",\r\n    \"description\": {\r\n        \"short\": \"short\",\r\n        \"long\": \"long\"\r\n    },\r\n    \"monetized\":{\r\n        \"ok\":false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/api/blog/create",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"blog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title\",\r\n    \"category\": \"category\",\r\n    \"description\": {\r\n        \"short\": \"short\",\r\n        \"long\": \"long\"\r\n    },\r\n    \"monetized\":{\r\n        \"ok\":false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/api/blog/create",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"blog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
